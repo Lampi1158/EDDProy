@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{46442EDF-3D6F-4384-9AD9-E03059889C4B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>EDDemo</RootNamespace>
+    <AssemblyName>EDDemo</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Graphviz, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Graphviz.2.38.0.2\lib\Graphviz.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="algoritmos\Busqueda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="algoritmos\Busqueda.Designer.cs">
+      <DependentUpon>Busqueda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="algoritmos\Exponente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="algoritmos\Exponente.Designer.cs">
+      <DependentUpon>Exponente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="algoritmos\Factorial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="algoritmos\Factorial.Designer.cs">
+      <DependentUpon>Factorial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="algoritmos\Fibonaccion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="algoritmos\Fibonaccion.Designer.cs">
+      <DependentUpon>Fibonaccion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="algoritmos\suma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="algoritmos\suma.Designer.cs">
+      <DependentUpon>suma.cs</DependentUpon>
+    </Compile>
+    <Compile Include="algoritmos\Torre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="algoritmos\Torre.Designer.cs">
+      <DependentUpon>Torre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Estructuras Lineales\Clases\cola2.cs" />
+    <Compile Include="Estructuras Lineales\Clases\ListaDoble.cs" />
+    <Compile Include="Estructuras Lineales\Clases\LIstasDobles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estructuras Lineales\Clases\LIstasDobles.Designer.cs">
+      <DependentUpon>LIstasDobles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Estructuras Lineales\Clases\listasimple.cs" />
+    <Compile Include="Estructuras Lineales\Clases\ListasSimples.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estructuras Lineales\Clases\ListasSimples.Designer.cs">
+      <DependentUpon>ListasSimples.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Estructuras Lineales\Clases\Nodo.cs" />
+    <Compile Include="Estructuras Lineales\Clases\Nodos.cs" />
+    <Compile Include="Estructuras Lineales\Cola.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estructuras Lineales\Cola.Designer.cs">
+      <DependentUpon>Cola.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Estructuras No Lineales\Clases\ArbolBusqueda.cs" />
+    <Compile Include="Estructuras Lineales\Clases\MiNodo.cs" />
+    <Compile Include="Estructuras Lineales\Clases\MiPila.cs" />
+    <Compile Include="Estructuras No Lineales\frmArboles.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estructuras No Lineales\frmArboles.Designer.cs">
+      <DependentUpon>frmArboles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Estructuras No Lineales\Clases\NodoBinario.cs" />
+    <Compile Include="frmInicio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmInicio.Designer.cs">
+      <DependentUpon>frmInicio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Estructuras Lineales\frmPilas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Estructuras Lineales\frmPilas.Designer.cs">
+      <DependentUpon>frmPilas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Grafica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Grafica.Designer.cs">
+      <DependentUpon>Grafica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Grafviz.cs" />
+    <Compile Include="Metodos de busqueda\BusquedaBinaria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metodos de busqueda\BusquedaBinaria.Designer.cs">
+      <DependentUpon>BusquedaBinaria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Metodos de busqueda\BusquedaSecuencial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metodos de busqueda\BusquedaSecuencial.Designer.cs">
+      <DependentUpon>BusquedaSecuencial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Metodos de ordenamiento\Burbuja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metodos de ordenamiento\Burbuja.Designer.cs">
+      <DependentUpon>Burbuja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Metodos de ordenamiento\Intercalacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metodos de ordenamiento\Intercalacion.Designer.cs">
+      <DependentUpon>Intercalacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Metodos de ordenamiento\MezclaDirecta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metodos de ordenamiento\MezclaDirecta.Designer.cs">
+      <DependentUpon>MezclaDirecta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Metodos de ordenamiento\MezclaNatural.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metodos de ordenamiento\MezclaNatural.Designer.cs">
+      <DependentUpon>MezclaNatural.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Metodos de ordenamiento\Quitsort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metodos de ordenamiento\Quitsort.Designer.cs">
+      <DependentUpon>Quitsort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Metodos de ordenamiento\Radix.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metodos de ordenamiento\Radix.Designer.cs">
+      <DependentUpon>Radix.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Metodos de ordenamiento\SellShort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Metodos de ordenamiento\SellShort.Designer.cs">
+      <DependentUpon>SellShort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="algoritmos\Busqueda.resx">
+      <DependentUpon>Busqueda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="algoritmos\Exponente.resx">
+      <DependentUpon>Exponente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="algoritmos\Factorial.resx">
+      <DependentUpon>Factorial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="algoritmos\Fibonaccion.resx">
+      <DependentUpon>Fibonaccion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="algoritmos\suma.resx">
+      <DependentUpon>suma.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="algoritmos\Torre.resx">
+      <DependentUpon>Torre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estructuras Lineales\Clases\LIstasDobles.resx">
+      <DependentUpon>LIstasDobles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estructuras Lineales\Clases\ListasSimples.resx">
+      <DependentUpon>ListasSimples.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estructuras Lineales\Cola.resx">
+      <DependentUpon>Cola.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estructuras No Lineales\frmArboles.resx">
+      <DependentUpon>frmArboles.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmInicio.resx">
+      <DependentUpon>frmInicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Estructuras Lineales\frmPilas.resx">
+      <DependentUpon>frmPilas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Grafica.resx">
+      <DependentUpon>Grafica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metodos de busqueda\BusquedaBinaria.resx">
+      <DependentUpon>BusquedaBinaria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metodos de busqueda\BusquedaSecuencial.resx">
+      <DependentUpon>BusquedaSecuencial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metodos de ordenamiento\Burbuja.resx">
+      <DependentUpon>Burbuja.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metodos de ordenamiento\Intercalacion.resx">
+      <DependentUpon>Intercalacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metodos de ordenamiento\MezclaDirecta.resx">
+      <DependentUpon>MezclaDirecta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metodos de ordenamiento\MezclaNatural.resx">
+      <DependentUpon>MezclaNatural.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metodos de ordenamiento\Quitsort.resx">
+      <DependentUpon>Quitsort.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metodos de ordenamiento\Radix.resx">
+      <DependentUpon>Radix.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Metodos de ordenamiento\SellShort.resx">
+      <DependentUpon>SellShort.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
